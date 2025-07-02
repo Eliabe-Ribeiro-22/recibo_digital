@@ -3,6 +3,7 @@
 ## TO DO
 
 ## Doing
+- Criar projeto no Figma
 
 ## Test
 
