@@ -9,7 +9,7 @@
     <header>cabeçalho</header>
     <main>
         <h1>Bem-vindo usuário, a área logada do sistema de gestão de Igrejas - AD PAN</h1>
-        <a href="/new">novo recibo</a>        
+        <a href="/new">novo recibo</a><br>       
         <table>
             Contribuições
             <tr>
