@@ -6,6 +6,15 @@
     <title>ADADOC</title>
 </head>
 <body>
+     @if (session('msg'))
+        <script type="text/javascript">
+            alert("{{ session('msg') }}");
+        </script>
+    @elseif (session('error'))
+        <script type="text/javascript">
+            alert("{{ session('error') }}");
+        </script>
+    @endif
     <header>cabeçalho</header>
     <main>
         <h1>Bem-vindo usuário, a área logada do sistema de gestão de Igrejas - AD PAN</h1>

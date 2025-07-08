@@ -12,7 +12,6 @@
 
 ## Done
 - criar tela inicial - HTML
-
 - Criar projeto no Figma
 - criar repositório Github
 - Criar Scrum - MD
