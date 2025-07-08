@@ -6,13 +6,14 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Models\receita;
-
+use Illuminate\Support\Facades\DB;
 date_default_timezone_set('America/Sao_Paulo');
 
 class recibo extends Controller
 {
     public function main(){
-        return view('inicio');
+        $receitas = DB::table('receitas')->get();
+        return view('inicio', ['receitas' => $receitas]);
     }
     
     public function new(){

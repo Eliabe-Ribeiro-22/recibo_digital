@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ADADOC</title>
+    <title>ADPAN RECIBO DIGITAL</title>
 </head>
 <body>
      @if (session('msg'))
@@ -15,6 +15,7 @@
             alert("{{ session('error') }}");
         </script>
     @endif
+    
     <header>cabeçalho</header>
     <main>
         <h1>Bem-vindo usuário, a área logada do sistema de gestão de Igrejas - AD PAN</h1>
@@ -35,11 +36,16 @@
                     imprimir
                 </th>
             </tr>
-            <tr>
-                <td>Eliabe Ribeiro Mota</td>
-                <td>Missão</td>
-                <td>10,00</td>
-                <td>&#128438;</td>
+        <?php 
+        foreach ($receitas as $receita) {
+            echo "<tr>";
+            echo "<td>" . $receita->NOME . "</td>";
+            echo "<td>" . "tipo_receita" . "<td>";
+            echo "<td>" . $receita->VALOR . "</td>";
+            echo "<td>&#128438;</td>";
+            echo "</tr>";
+        }
+    ?>
             </tr>
         </table>
     </main>
