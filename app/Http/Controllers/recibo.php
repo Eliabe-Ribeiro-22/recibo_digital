@@ -36,4 +36,16 @@ class recibo extends Controller
         }
 
     }
+
+    public function delete($id){
+        try {
+            // encontrar o id do aluno, para depois excluí-lo
+            receita::findOrFail($id)->delete();
+
+            return redirect('/')->with('msg', 'Receita excluída com sucesso');
+        } catch (Exception $e) {
+         return redirect("/")->with('error', 'erro ao excluir uma receita');
+        }
+        
+    }
 }

@@ -24,6 +24,9 @@
             Contribuições
             <tr>
                 <th>
+                    Excluir
+                </th>
+                <th>
                     Nome
                 </th>
                 <th>
@@ -39,8 +42,23 @@
         <?php 
         foreach ($receitas as $receita) {
             echo "<tr>";
+            //echo "<td>". $receita->id . "</td>";
+            echo "<td>";
+        ?>
+            <form method='POST' action="{{route('destroy', ['id' => $receita->id])}}">
+            @csrf  
+            @method('DELETE') 
+                <input type='text' name='id_delete' value='{{$receita->id}}'>
+                
+                </input>
+                <button>
+                🗑
+                </button>
+            </form>
+
+            <?php echo "</td>";
             echo "<td>" . $receita->NOME . "</td>";
-            echo "<td>" . "tipo_receita" . "<td>";
+            echo "<td>" . "tipo_receita" . "</td>";
             echo "<td>" . $receita->VALOR . "</td>";
             echo "<td>&#128438;</td>";
             echo "</tr>";
