@@ -10,10 +10,11 @@
 <main>
 	Alterar recibo
 	<a href="/">voltar ao início</a>
-	<form action="/alterar" method="post" style="background: red;">
+	<form action="{{ route('update')}}" method="post" style="background: red;">
 		@csrf
+		@method('PUT')
 		<label>ID_RECIBO</label>
-		<input type="text" name="id_recibo" id="id_recibo" value="{{$receita->id}}">
+		<input type="text" name="id" id="id" value="{{$receita->id}}">
 
 		<label>Nome do Contribuinte</label>
 		<input type="text" name="NOME" id="NOME" value="{{$receita->NOME}}">

@@ -53,4 +53,17 @@ class recibo extends Controller
         $receita = receita::findOrFail($id);
         return view('edit', ['receita' => $receita]);
     }
+
+    public function alterar(Request $request){
+
+        $data = $request->all();
+
+        receita::findOrFail($request->id)->update($data);
+        return redirect('/')->with('msg', 'Alterado recibo com sucesso');
+        
+
+
+
+        
+    }
 }
