@@ -48,4 +48,9 @@ class recibo extends Controller
         }
         
     }
+    
+    public function edit($id){
+        $receita = receita::findOrFail($id);
+        return view('edit', ['receita' => $receita]);
+    }
 }

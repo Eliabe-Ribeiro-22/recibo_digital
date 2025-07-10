@@ -24,6 +24,9 @@
             Contribuições
             <tr>
                 <th>
+                    Editar
+                </th>
+                <th>
                     Excluir
                 </th>
                 <th>
@@ -43,6 +46,10 @@
         foreach ($receitas as $receita) {
             echo "<tr>";
             //echo "<td>". $receita->id . "</td>";
+            echo "<td>";
+            ?>
+            <a href="{{ route('edit', ['id' => $receita->id]) }}">&#9998</a> </td>
+            <?php
             echo "<td>";
         ?>
             <form method='POST' action="{{route('destroy', ['id' => $receita->id])}}">
