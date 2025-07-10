@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Novo recibo</title>
-</head>
-<body>
-<header>cabeçalho</header>
-<main>
-	cadastrar novo recibo
+@extends('layouts.main')
+@section('titulo', 'ADPAN - novo recibo')
+@section('conteudo')
+
+	<h1>cadastrar novo recibo</h1>
 	<a href="/">voltar ao início</a>
 	<form action="/salvar" method="post" style="background: red;">
 		@csrf
@@ -38,7 +32,4 @@
 
 		<button name="salvar">Cadastrar</button>
 	</form>
-</main>
-<footer>rodape</footer>
-</body>
-</html>
+@endsection

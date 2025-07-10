@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alterar recibo</title>
-</head>
-<body>
-<header>cabeçalho</header>
-<main>
-	Alterar recibo
+@extends('layouts.main')
+@section('titulo', 'ADPAN - alterar recibo')
+@section('conteudo')
+	<h1>Alterar recibo</h1>
 	<a href="/">voltar ao início</a>
 	<form action="{{ route('update')}}" method="post" style="background: red;">
 		@csrf
@@ -39,7 +32,4 @@
 
 		<button name="alterar">Alterar</button>
 	</form>
-</main>
-<footer>rodape</footer>
-</body>
-</html>
+@endsection

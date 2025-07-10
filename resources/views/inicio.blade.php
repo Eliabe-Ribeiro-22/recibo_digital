@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ADPAN RECIBO DIGITAL</title>
-</head>
-<body>
-     @if (session('msg'))
+@extends('layouts.main')
+@section('titulo', 'ADPAN - RECIBO DIGITAL')
+@section('conteudo')
+
+@if (session('msg'))
         <script type="text/javascript">
             alert("{{ session('msg') }}");
         </script>
@@ -15,10 +11,7 @@
             alert("{{ session('error') }}");
         </script>
     @endif
-    
-    <header>cabeçalho</header>
-    <main>
-        <h1>Bem-vindo usuário, a área logada do sistema de gestão de Igrejas - AD PAN</h1>
+    <h1>Bem-vindo usuário, a área logada do sistema de gestão de Igrejas - AD PAN</h1>
         <a href="/new">novo recibo</a><br>       
         <table>
             Contribuições
@@ -73,7 +66,4 @@
     ?>
             </tr>
         </table>
-    </main>
-    <footer>rodapé</footer>
-</body>
-</html>
+@endsection
