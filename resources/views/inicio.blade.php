@@ -58,7 +58,7 @@
 
             <?php echo "</td>";
             echo "<td>" . $receita->NOME . "</td>";
-            echo "<td>" . "tipo_receita" . "</td>";
+            echo "<td>" . $receita->TIPO . "</td>";
             echo "<td>" . $receita->VALOR . "</td>";
             echo "<td>&#128438;</td>";
             echo "</tr>";

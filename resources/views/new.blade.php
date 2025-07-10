@@ -14,12 +14,12 @@
 
 		<br>
 		<label>Tipo de receita</label>
-		<select>
-			<option>Dízimo</option>
-			<option>Coleta</option>
-			<option>Missão</option>
-			<option>Oferta</option>
-			<option>Voto</option>
+		<select name="TIPO">
+			<option value="dizimo">Dízimo</option>
+			<option value="coleta">Coleta</option>
+			<option value="missao">Missão</option>
+			<option value="oferta">Oferta</option>
+			<option value="voto">Voto</option>
 		</select>
 
 		<label>Valor</label>

@@ -30,6 +30,7 @@ Site para AD Ponte Alta do Norte. É feito recibo de entrada para a igreja, seja
 - realizado meio-campo entre html e db via php
 - criada rota, controller e view new_recibo
 - criada rota, controller e view edit
+- criado layouts.main para reaproveitar cabeçalho e rodapé das páginas do sites
 
 ## Desenvolvedor
 

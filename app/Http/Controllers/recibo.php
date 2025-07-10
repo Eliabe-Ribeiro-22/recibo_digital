@@ -24,6 +24,7 @@ class recibo extends Controller
         try {
             $receita = new receita;
             $receita->NOME = $request->NOME;
+            $receita->TIPO = $request->TIPO;
             $receita->VALOR = $request->VALOR;
             $receita->DATA = $request->DATA;
 

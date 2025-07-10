@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('receitas', function (Blueprint $table){
             $table->id();
             $table->string('NOME');
-            //$table->string('tipo_receita');
+            $table->string('TIPO');
             $table->string('VALOR');
             $table->date('DATA');
             $table->timestamps();
