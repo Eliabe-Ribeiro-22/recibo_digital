@@ -38,7 +38,6 @@
         <?php 
         foreach ($receitas as $receita) {
             echo "<tr>";
-            //echo "<td>". $receita->id . "</td>";
             echo "<td>";
             ?>
             <a href="{{ route('edit', ['id' => $receita->id]) }}">&#9998</a> </td>
@@ -48,7 +47,7 @@
             <form method='POST' action="{{route('destroy', ['id' => $receita->id])}}">
             @csrf  
             @method('DELETE') 
-                <input type='text' name='id_delete' value='{{$receita->id}}'>
+                <input type='text' name='id_delete' value='{{$receita->id}}'style='display: none;'>
                 
                 </input>
                 <button>

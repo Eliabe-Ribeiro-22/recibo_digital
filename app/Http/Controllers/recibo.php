@@ -71,6 +71,6 @@ class recibo extends Controller
     $receita = receita::findOrFail($id);
 
     $pdf = Pdf::loadView('pdf.recibo', ['receita' => $receita]);
-    return $pdf->download('recibo01.pdf');
+    return $pdf->stream('recibo01.pdf');
     }
 }
