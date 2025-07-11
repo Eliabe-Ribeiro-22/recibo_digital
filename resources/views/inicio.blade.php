@@ -60,7 +60,10 @@
             echo "<td>" . $receita->NOME . "</td>";
             echo "<td>" . $receita->TIPO . "</td>";
             echo "<td>" . $receita->VALOR . "</td>";
-            echo "<td>&#128438;</td>";
+    echo "<td>";
+?>
+<a href="{{  route('pdf',['id' => $receita->id])}}">&#128438;</a></td>";
+            <?php
             echo "</tr>";
         }
     ?>

@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 use App\Models\receita;
 use Illuminate\Support\Facades\DB;
+// PDF
+use Barryvdh\DomPDF\Facade\Pdf;
+
 date_default_timezone_set('America/Sao_Paulo');
 
 class recibo extends Controller
@@ -61,10 +64,13 @@ class recibo extends Controller
 
         receita::findOrFail($request->id)->update($data);
         return redirect('/')->with('msg', 'Alterado recibo com sucesso');
-        
+                
+    }
 
+    public function rb_dgt($id){
+    $receita = receita::findOrFail($id);
 
-
-        
+    $pdf = Pdf::loadView('pdf.recibo', ['receita' => $receita]);
+    return $pdf->download('recibo01.pdf');
     }
 }
