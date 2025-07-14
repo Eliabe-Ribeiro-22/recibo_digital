@@ -12,9 +12,14 @@
 			text-align: center;
 			font-size: 1rem;
 		}
+		/*para quebra página*/
+		.page-break{
+			page-break-after: always;
+		}
 	</style>
 </head>
 <body>
+	<!-- <p>Página 1</p> -->
 	<hr><br><br><br>
 	
 	<!-- Primeira Via -->
@@ -38,7 +43,7 @@
 
 		<p>1ª Via - Contribuinte</p>
 		<p style="font-size: 0.8rem; text-align: right;">Desenvolvido por Eliabe Ribeiro Mota. 2025-2025</p>
-	<br><br><hr><br><br>
+	<br><hr><br>
 	
 	<!-- Segunda via -->
 	<p>
@@ -61,7 +66,8 @@
 
 	<p>2ª Via - Contabilidade</p>
 	<p style="font-size: 0.8rem; text-align: right;">Desenvolvido por Eliabe Ribeiro Mota. 2025-2025</p>
-	
-
+	<!-- se precisase de página 2 -->
+	<!-- <div class="page-break"></div> -->
+	 <!-- <p>Página 2</p> -->
 </body>
 </html>
