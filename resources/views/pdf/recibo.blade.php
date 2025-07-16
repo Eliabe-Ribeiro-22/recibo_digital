@@ -12,7 +12,7 @@
 			text-align: center;
 			font-size: 1rem;
 		}
-		/*para quebra página*/
+		/*para quebra de página*/
 		.page-break{
 			page-break-after: always;
 		}
@@ -66,7 +66,7 @@
 
 	<p>2ª Via - Contabilidade</p>
 	<p style="font-size: 0.8rem; text-align: right;">Desenvolvido por Eliabe Ribeiro Mota. 2025-2025</p>
-	<!-- se precisase de página 2 -->
+	<!-- se precisasse de página 2 -->
 	<!-- <div class="page-break"></div> -->
 	 <!-- <p>Página 2</p> -->
 </body>

@@ -2,8 +2,8 @@
 @section('titulo', 'ADPAN - alterar recibo')
 @section('conteudo')
 	<h1>Alterar recibo</h1>
-	<a href="/">voltar ao início</a>
-	<form action="{{ route('update')}}" method="post" style="background: red;">
+	<a href="/" class="action">voltar ao início</a>
+	<form action="{{ route('update')}}" method="post">
 		@csrf
 		@method('PUT')
 		<label>ID_RECIBO</label>

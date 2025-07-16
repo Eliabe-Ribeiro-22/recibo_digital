@@ -1,0 +1,9 @@
+/*centralizar tabela*/
+table{
+	margin: 5vw 10vw;
+	width: 80vw;
+}
+
+td {
+	justify-items: center;
+}

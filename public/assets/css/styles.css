@@ -1,0 +1,36 @@
+@import 'exibir_receitas.css';
+@import 'cadastrar_receita.css';
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*definindo variáveis*/
+:root{
+	--bg-main: #F8FCDA;
+	--bg-form: #603000;
+	--bg-btn: #FFAA00;
+	--primary-font: #fff;
+}
+
+/*setando fundos e cores de font globalmente*/
+main{
+	background: var(--bg-main);
+	font-size: 1rem;
+}
+
+form, table{
+	background: var(--bg-form);
+	color: var(--primary-font);
+}
+a{
+	background: var(--bg-btn);
+	color: var(--primary-font);
+	
+}
+
+/*botões de ação: início ou cadastrar nova receita*/
+a.action{
+	margin: 1rem 40vw;
+}

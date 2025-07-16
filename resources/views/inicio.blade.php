@@ -1,8 +1,7 @@
 @extends('layouts.main')
 @section('titulo', 'ADPAN - RECIBO DIGITAL')
 @section('conteudo')
-
-@if (session('msg'))
+    @if (session('msg'))
         <script type="text/javascript">
             alert("{{ session('msg') }}");
         </script>
@@ -12,9 +11,14 @@
         </script>
     @endif
     <h1>Bem-vindo usuário, a área logada do sistema de gestão de Igrejas - AD PAN</h1>
-        <a href="/new">novo recibo</a><br>       
+        <a href="/new" class="action">novo recibo</a><br>       
         <table>
-            Contribuições
+            <tr>
+                <th>
+                    Contribuições    
+                </th>
+            </tr>
+
             <tr>
                 <th>
                     Editar
@@ -61,7 +65,7 @@
             echo "<td>" . $receita->VALOR . "</td>";
     echo "<td>";
 ?>
-<a target="_blank" href="{{  route('pdf',['id' => $receita->id])}}">&#128438;</a></td>";
+<a target="_blank" href="{{  route('pdf',['id' => $receita->id])}}">&#128438;</a></td>
             <?php
             echo "</tr>";
         }
