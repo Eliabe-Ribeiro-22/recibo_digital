@@ -20,6 +20,7 @@
 - criar função excluir_recibo - Acesso Dados - PHP
 - criar função alterar_recibo - Acesso Dados - PHP
 - criar função pesquisar_recibo - Acesso Dados - PHP
+- Imprimir em PDF
 - Criar projeto no Figma
 - Fazer CSS do Site
 - Fazer responsividade

@@ -1,14 +1,14 @@
 # Kanban Eliabe - projeto Recibo Digital
 
 ## TO DO
-- criar função alterar_recibo - Acesso Dados - PHP
 
 ## Doing
 
 ## Test
 
 ## Done
-
+- Imprimir em PDF
+- criar função alterar_recibo - Acesso Dados - PHP
 - criar PHP na camada Regra de Negócios
   - chamar função de Acesso a Dados - PHP
 - criar função salvar_recibo - Acesso Dados - PHP
