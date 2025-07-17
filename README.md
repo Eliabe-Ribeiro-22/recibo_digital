@@ -46,7 +46,8 @@ Site para AD Ponte Alta do Norte. É feito recibo de entrada para a igreja, seja
 
 ## 17/07 - Eliabe
   - Finalizado ajustes de impressão de recibos PDF através de requisições do cliente
-
+  - Front-end CSS do formulário de edição de receitas
+  
 ## Desenvolvedor
 
 [Eliabe Ribeiro Mota](https://github.com/Eliabe-Ribeiro-22/)
