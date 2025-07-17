@@ -72,4 +72,9 @@
     ?>
             </tr>
         </table>
+        <h1>Imprimíveis para realização da contabilidade via Excel</h1>
+        <a href="#" download="#">Receitas</a>
+        <a href="#" download="#">Despesas</a>
+        <a href="#" download="#">Saldo Geral</a>
+        <a href="#" download="#">Receitas via Bancos</a>
 @endsection

@@ -1,0 +1,22 @@
+/*formulário de cadastro de nova receita*/
+form#editar-receita{
+	width: 70vw;
+	margin: 1vw 15vw;
+}
+
+label.size{
+font: 1.3rem Arial, sans-serif;
+}
+
+/*grupo são 2 label + 2 inputs que ficam na mesma linha*/
+.grupo{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+button#btn-editar{
+	background: var(--bg-btn);
+	color: var(--primary-font);
+	margin: 0 10vw;
+	font-size: 2rem;
+}

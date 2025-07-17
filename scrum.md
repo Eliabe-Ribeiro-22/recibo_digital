@@ -59,4 +59,3 @@
 ## Sprint 4
 - Criar validação de formulário
 - Deployar na Hostinger
-- Criar código SQL para tabela recibo

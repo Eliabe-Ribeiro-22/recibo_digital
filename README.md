@@ -33,12 +33,20 @@ Site para AD Ponte Alta do Norte. É feito recibo de entrada para a igreja, seja
 - criado layouts.main para reaproveitar cabeçalho e rodapé das páginas do sites
 
 ## 11/07 - Eliabe
+
 - Realizada função alterar(edit + update) das receitas cadastradas
 - Realizada impressão dos recibos via PDF laravel
+  - Iniciado ajustes de impressão de recibos PDF através de requisições do cliente
 
 ## 16/07 - Eliabe
+
 - Front-end CSS da table que exibe as receitas cadastradas
 - Front-end CSS do formulário de cadastro de receitas 
+
+
+## 17/07 - Eliabe
+  - Finalizado ajustes de impressão de recibos PDF através de requisições do cliente
+
 ## Desenvolvedor
 
 [Eliabe Ribeiro Mota](https://github.com/Eliabe-Ribeiro-22/)

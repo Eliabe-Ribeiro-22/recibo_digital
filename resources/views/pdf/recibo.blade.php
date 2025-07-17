@@ -11,6 +11,10 @@
 		p{
 			text-align: center;
 			font-size: 1rem;
+			color: #fff;
+		}
+		div.via_recibo{
+			background: #603000;
 		}
 		/*para quebra de página*/
 		.page-break{
@@ -19,22 +23,24 @@
 	</style>
 </head>
 <body>
-	<!-- <p>Página 1</p> -->
-	<hr><br><br><br>
+		<!-- <p>Página 1</p> -->
+		<hr><br><br><br>
 	
-	<!-- Primeira Via -->
-	<p>
-		IGREJA EVANGÉLICA ASSEMBLÉIA DE DEUS DE PONTE ALTA DO NORTE
-		<br>
-		CNPJ: 11.101.212/0001-81
-		<br>
-		RUA 30 DE MARÇO Nº 61 – SÃO SEBASTIÃO 
-		<br>
-		PONTE ALTA DO NORTE – CEP 89535-000
-		<br>
-		E-MAIL: adpontealtadonorte@gmail.com
-		<br>FACEBOOK: AD Ponte
-	</p>
+	<div class="via_recibo">
+		<!-- Primeira Via -->
+		<p>
+			IGREJA EVANGÉLICA ASSEMBLÉIA DE DEUS DE PONTE ALTA DO NORTE
+			<br>
+			CNPJ: 11.101.212/0001-81
+			<br>	
+			RUA 30 DE MARÇO Nº 61 – SÃO SEBASTIÃO 
+			<br>
+			PONTE ALTA DO NORTE – CEP 89535-000
+			<br>
+			E-MAIL: adpontealtadonorte@gmail.com
+			<br>FACEBOOK: AD Ponte
+		</p>
+		
 		<h1>Impressão de Recibo digital nº 00{{$receita->id}}</h1>
 		<p>Nome do Contribuinte: {{$receita->NOME}}</p>
 		<p>Valor: {{$receita->VALOR}},00</p>
@@ -43,9 +49,12 @@
 
 		<p>1ª Via - Contribuinte</p>
 		<p style="font-size: 0.8rem; text-align: right;">Desenvolvido por Eliabe Ribeiro Mota. 2025-2025</p>
-	<br><hr><br>
+		</div>
+		<br><hr><br>
 	
+
 	<!-- Segunda via -->
+	<div class="via_recibo">
 	<p>
 		IGREJA EVANGÉLICA ASSEMBLÉIA DE DEUS DE PONTE ALTA DO NORTE
 		<br>
@@ -58,7 +67,7 @@
 		E-MAIL: adpontealtadonorte@gmail.com
 		<br>FACEBOOK: AD Ponte
 	</p>
-		<h1>Impressão de Recibo digital nº {{$receita->id}}</h1>
+		<h1>Impressão de Recibo digital nº 00{{$receita->id}}</h1>
 		<p>Nome do Contribuinte: {{$receita->NOME}}</p>
 		<p>Valor: {{$receita->VALOR}},00</p>
 		<p>Tipo de contribuição: {{$receita->TIPO}}</p>

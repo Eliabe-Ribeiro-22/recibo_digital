@@ -1,5 +1,6 @@
 @import 'exibir_receitas.css';
 @import 'cadastrar_receita.css';
+@import 'editar_receita.css';
 
 *{
 	margin: 0;

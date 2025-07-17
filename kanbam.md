@@ -1,10 +1,15 @@
 # Kanban Eliabe - projeto Recibo Digital
 
 ## TO DO
+- Deployar na Hostinger
 
 ## Doing
+- Fazer CSS do Site
+
+- Criar validação de formulário
 
 ## Test
+- Fazer responsividade
 
 ## Done
 - Imprimir em PDF
