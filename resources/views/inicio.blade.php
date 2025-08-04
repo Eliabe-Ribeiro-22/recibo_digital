@@ -44,7 +44,7 @@
             echo "<tr>";
             echo "<td>";
             ?>
-            <a href="{{ route('edit', ['id' => $receita->id]) }}">&#9998</a> </td>
+            <a href="{{ route('edit', ['id' => $receita->id]) }}" class="action">&#9998</a> </td>
             <?php
             echo "<td>";
         ?>

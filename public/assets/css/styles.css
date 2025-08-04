@@ -1,3 +1,4 @@
+@import 'nav.css';
 @import 'exibir_receitas.css';
 @import 'cadastrar_receita.css';
 @import 'editar_receita.css';
@@ -25,13 +26,12 @@ form, table{
 	background: var(--bg-form);
 	color: var(--primary-font);
 }
-a{
-	background: var(--bg-btn);
-	color: var(--primary-font);
-	
+a, button{
+	cursor: pointer;
 }
-
 /*botões de ação: início ou cadastrar nova receita*/
 a.action{
-	margin: 1rem 40vw;
+	/*margin: 1rem 40vw;*/
+	background: var(--bg-btn);
+	color: var(--primary-font);
 }

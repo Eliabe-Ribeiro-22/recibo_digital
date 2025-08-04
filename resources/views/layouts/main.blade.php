@@ -8,8 +8,10 @@
 </head>
 <body>
 <header>
-	<img src="#" alt="logo da ADPAN">
-	<h1>Assembleia de Deus Ponte Alta do Norte</h1>
+	<div id="logo">
+		<img src="#" alt="logo da ADPAN">
+		<h1>Assembleia de Deus Ponte Alta do Norte</h1>
+	</div>
 	<nav>
 		Menu de navegação:
 		<ul>

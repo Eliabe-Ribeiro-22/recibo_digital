@@ -4,14 +4,14 @@
 
 	<h1>cadastrar novo recibo</h1>
 	<a href="/" class="action">voltar ao início</a>
-	<form action="/salvar" method="post" id="nova-receita">
+	<form action="/salvar" method="post" id="nova-receita" onsubmit="return validar_recibo()">
 		@csrf
 		<div class="grupo">
 			<label class="size">ID_recibo</label>
 			<input type="text" value="0" name="id_recibo" id="id_recibo">
 
 			<label class="size">Nome do Contribuinte</label>
-			<input type="text" name="NOME" id="NOME">
+			<input type="text" name="NOME" id="nome_recibo">
 		</div>
 		<div class="grupo">
 			<label class="size">Tipo de receita</label>
@@ -24,13 +24,14 @@
 			</select>
 		
 			<label class="size">Valor</label>
-			<input type="text" name="VALOR" id="VALOR">
+			<input type="text" name="VALOR" id="valor_recibo">
 		</div>
 		
 		<div class="grupo">
 			<label class="size">Data</label>
-			<input type="date" name="DATA" id="DATA">
+			<input type="date" name="DATA" id="data_recibo">
 		</div>
 		<button name="salvar" id="btn-salvar">Cadastrar</button>
 	</form>
+	<script type="text/javascript" src="/assets/js/index.js"></script>
 @endsection

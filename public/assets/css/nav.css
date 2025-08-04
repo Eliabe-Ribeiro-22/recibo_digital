@@ -1,0 +1,31 @@
+header{
+	display: flex;
+	width: 100vw;
+	height: 10vh;
+
+}
+header div#logo{
+	display: flex;
+	width: 30vw;
+	background: green;
+}
+
+header nav{
+	width: 70vw;
+	background: blue;
+}
+header nav ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	text-decoration: none;
+	background: red;
+	justify-content: space-evenly;
+
+}
+
+header nav ul li{
+	background: black;
+	text-decoration: none;
+	
+}
