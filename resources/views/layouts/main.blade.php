@@ -10,10 +10,9 @@
 <header>
 	<div id="logo">
 		<img src="#" alt="logo da ADPAN">
-		<h1>Assembleia de Deus Ponte Alta do Norte</h1>
+		<h3>Assembleia de Deus Ponte Alta do Norte</h3>
 	</div>
 	<nav>
-		Menu de navegação:
 		<ul>
 			<li><a href="/">Início</li>
 			<li><a href="/new">Cadastrar</li>
