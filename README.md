@@ -50,6 +50,10 @@ Site para AD Ponte Alta do Norte. É feito recibo de entrada para a igreja, seja
   - Novas requisições do cliente:
   	- seção com links para baixar planilhas excel de gestão financeira na página inicial do site
   - Iniciada criação do cabeçalho do site
+
+## 04/08 - Eliabe
+- Criado códigos em JavaScript para validação de dados enviados no formulário
+
 ## Desenvolvedor
 
 [Eliabe Ribeiro Mota](https://github.com/Eliabe-Ribeiro-22/)
